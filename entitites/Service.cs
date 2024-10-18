@@ -8,9 +8,9 @@ namespace ReservationSystem.entitites
 {
     internal class Service
     {
-        public int id;
-        public string title;
-        public double price;
+        public int id { get; set; }
+        public string title { get; set; }
+        public double price { get; set; }
 
         public Service(string title, double price)
         {

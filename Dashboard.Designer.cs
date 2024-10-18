@@ -30,6 +30,8 @@
         {
             this.btn_add_service = new System.Windows.Forms.Button();
             this.btn_add_reservation = new System.Windows.Forms.Button();
+            this.dgv_reservations = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_reservations)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_add_service
@@ -54,15 +56,27 @@
             this.btn_add_reservation.UseVisualStyleBackColor = false;
             this.btn_add_reservation.Click += new System.EventHandler(this.btn_add_reservation_Click);
             // 
+            // dgv_reservations
+            // 
+            this.dgv_reservations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_reservations.Location = new System.Drawing.Point(41, 138);
+            this.dgv_reservations.Name = "dgv_reservations";
+            this.dgv_reservations.RowTemplate.Height = 23;
+            this.dgv_reservations.Size = new System.Drawing.Size(712, 262);
+            this.dgv_reservations.TabIndex = 2;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dgv_reservations);
             this.Controls.Add(this.btn_add_reservation);
             this.Controls.Add(this.btn_add_service);
             this.Name = "Dashboard";
             this.Text = "Dashboard";
+            this.Load += new System.EventHandler(this.Dashboard_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_reservations)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -71,5 +85,6 @@
 
         private System.Windows.Forms.Button btn_add_service;
         private System.Windows.Forms.Button btn_add_reservation;
+        private System.Windows.Forms.DataGridView dgv_reservations;
     }
 }

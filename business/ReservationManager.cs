@@ -10,7 +10,7 @@ namespace ReservationSystem.business
 {
     internal class ReservationManager
     {
-        private ReservationRepository repository;
+        private readonly ReservationRepository repository;
 
         public ReservationManager(ReservationRepository repository)
         {
@@ -23,6 +23,11 @@ namespace ReservationSystem.business
             reservation.id = this.repository.GetLastId() + 1;
             this.repository.Add(reservation);
 
+        }
+
+        public List<Reservation> GetAll()
+        {
+            return this.repository.GetAll();
         }
     }
 }

@@ -42,11 +42,11 @@ namespace ReservationSystem
                 Reservation reservation = new Reservation(
                     tb_name.Text,
                     tb_surname.Text,
-                    selectedService.id
+                    selectedService
                 );
 
                 this.reservationManager.Save(reservation);
-            this.Close();
+                this.Close();
             }
 
         }
