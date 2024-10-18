@@ -51,6 +51,12 @@
   <ItemGroup>
     <Compile Include="business\ServiceManager.cs" />
     <Compile Include="business\UserManager.cs" />
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="entitites\Reservation.cs" />
     <Compile Include="entitites\Service.cs" />
     <Compile Include="entitites\User.cs" />

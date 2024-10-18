@@ -9,7 +9,9 @@ namespace ReservationSystem.entitites
 {
     internal class Reservation
     {
+        public int id;
         public string Name;
         public string Surname;
+        public Service service;
     }
 }

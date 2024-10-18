@@ -8,6 +8,7 @@ namespace ReservationSystem.entitites
 {
     internal class Service
     {
+        public int id;
         public string title;
         public double price;
     }

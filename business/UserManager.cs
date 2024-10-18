@@ -7,7 +7,7 @@ namespace ReservationSystem.business
 
         public bool Login(User user)
         {
-            return user.Username.Equals("admin") && user.Password.Equals("12345678");
+            return user.Username.Equals("admin") && user.Password.Equals("1");
         }
 
     }
