@@ -17,5 +17,10 @@ namespace ReservationSystem.entitites
             this.title = title;
             this.price = price;
         }
+
+        public override string ToString()
+        {
+            return title;
+        }
     }
 }

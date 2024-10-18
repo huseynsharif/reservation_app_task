@@ -12,6 +12,13 @@ namespace ReservationSystem.entitites
         public int id;
         public string Name;
         public string Surname;
-        public Service service;
+        public int serviceId;
+
+        public Reservation(string name, string surname, int serviceId)
+        {
+            Name = name;
+            Surname = surname;
+            this.serviceId = serviceId;
+        }
     }
 }

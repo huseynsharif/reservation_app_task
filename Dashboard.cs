@@ -22,5 +22,11 @@ namespace ReservationSystem
             AddService addService = new AddService();
             addService.ShowDialog();
         }
+
+        private void btn_add_reservation_Click(object sender, EventArgs e)
+        {
+            AddReservation addReservation = new AddReservation();
+            addReservation.ShowDialog();
+        }
     }
 }

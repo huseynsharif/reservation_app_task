@@ -31,8 +31,11 @@ namespace ReservationSystem.business
             {
                 this.repository.Update(service);
             }
+        }
 
-            
+        public List<Service> GetAll()
+        {
+            return this.repository.GetAll();
         }
     }
 }
