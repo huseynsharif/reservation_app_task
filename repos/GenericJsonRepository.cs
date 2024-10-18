@@ -5,10 +5,11 @@ using System.IO;
 
 namespace ReservationSystem.repos
 {
-    internal class GenericJsonRepository<T>
+    internal abstract class GenericJsonRepository<T>
     {
 
-        private const string FilePath = @"db.json";
+        public abstract string FilePath { get; set; }
+        public abstract int GetLastId();
 
         public void Add(T item)
         {
