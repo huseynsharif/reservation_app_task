@@ -16,5 +16,11 @@ namespace ReservationSystem
         {
             InitializeComponent();
         }
+
+        private void btn_add_service_Click(object sender, EventArgs e)
+        {
+            AddService addService = new AddService();
+            addService.ShowDialog();
+        }
     }
 }

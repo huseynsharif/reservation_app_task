@@ -19,9 +19,20 @@ namespace ReservationSystem.business
 
         public void SaveService(Service service)
         {
-            service.id = this.repository.GetLastId() + 1;
-            this.repository.Add(service);
-        }
 
+            int serviceId = this.repository.GetIdByTitle(service.title);
+
+            if (serviceId == -1)
+            {
+                service.id = this.repository.GetLastId() + 1;
+                this.repository.Add(service);
+            }
+            else
+            {
+                this.repository.Update(service);
+            }
+
+            
+        }
     }
 }

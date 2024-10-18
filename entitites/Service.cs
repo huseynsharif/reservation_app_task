@@ -11,5 +11,11 @@ namespace ReservationSystem.entitites
         public int id;
         public string title;
         public double price;
+
+        public Service(string title, double price)
+        {
+            this.title = title;
+            this.price = price;
+        }
     }
 }
